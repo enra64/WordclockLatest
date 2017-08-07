@@ -188,7 +188,7 @@ public class DrawingView extends View{
 				rectPaint.setColor(wordColors[wordCount]);
 				textPaint.setColor(wordColors[wordCount]);
 				textPaint.getTextBounds(stringArray[i], 0, stringArray[i].length(), rectText);
-			    //punkte: rechtecke vergrößern
+			    //punkte: rechtecke vergrÃ¶ÃŸern
 			    if(wordCount>NUMBER_OF_WORDS-5)
 			    	rectText.inset(-30, -30);
 			    else
@@ -200,10 +200,10 @@ public class DrawingView extends View{
 			    //for automatic max size and centering
 			    if(!textSizeFinal)
 			    	lineWidth[yCounter]+=rectText.width();
-			    //xOffset=alle bisherigen wörter der reihe
+			    //xOffset=alle bisherigen wÃ¶rter der reihe
 			    for(int c=1; c<=i;c++)
 			    	xOffset+=wordRects[wordCount-c].width();
-			    //addiere die höhen der ersten boxen um den yOffset zu kriegen
+			    //addiere die hÃ¶hen der ersten boxen um den yOffset zu kriegen
 			    for(int iterator=0;iterator<=yCounter;iterator++)
 			    	yOffset+=firstWordHeight[iterator]+1;
 			    //draw text
